@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #78AFFF;
+}
+
+#home-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header {
+    background-color: #559AFF;
+    padding-top: 0;
+}
+
+main {
+    min-height: 300px;
+}
+
+main ul {
+    display: inline-block;
+    padding-left: 1em;
+}
+
+main ul li {
+    font-size: 1.2em;
+}
+
+#home-img {
+    float: right;
+}
+
+footer {
+    background-color: #559AFF;
+    text-align: center;
+}
