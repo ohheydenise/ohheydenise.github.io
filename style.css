@@ -31,7 +31,7 @@ main ul li {
 }
 
 a {
-    color: rgb(197, 0, 0);
+    color: #800000;
 }
 
 a:hover {
@@ -39,7 +39,7 @@ a:hover {
 }
 
 a:active {
-    color: rgb(197, 0, 0);
+    color: #800000;
 }
 
 #home-img {
