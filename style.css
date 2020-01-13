@@ -30,6 +30,18 @@ main ul li {
     font-size: 1.2em;
 }
 
+a {
+    color: brown;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:active {
+    color: brown;
+}
+
 #home-img {
     float: right;
 }
