@@ -8,13 +8,17 @@ body {
     background-color: #78AFFF;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #home-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 header {
     background-color: #559AFF;
-    padding-top: 0;
+    padding: 10px;
 }
 
 main {
