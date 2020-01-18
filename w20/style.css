@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-#home-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+#design-content {
+    text-align: center;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 }
 
 main {
-    min-height: 300px;
+    min-height: 250px;
 }
 
 main ul {
@@ -48,9 +48,75 @@ a:active {
 
 #home-img {
     float: right;
+    box-shadow: 5px 5px 8px #ffffff;
 }
 
 footer {
     background-color: #559AFF;
     text-align: center;
+}
+
+#design-grid {
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    text-align: center;
+    grid-gap: 10px;
+    text-decoration: underline;
+}
+
+#design-1 {
+    grid-column: 1;
+    border: 2px solid #800000;
+    border-radius: 10px;
+}
+
+#design-2 {
+    grid-column: 2;
+    border: 2px solid #800000;
+    border-radius: 10px;
+}
+
+#design-3 {
+    grid-column: 3;
+    border: 2px solid #800000;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    #design-grid {
+        grid-template-columns: repreat(1fr, 2);
+    }
+
+    #design-1 {
+        grid-column: 1;
+    }
+
+    #design-2 {
+        grid-column: 2;
+    }
+
+    #design-3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #design-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #design-1 {
+        grid-column: 1;
+    }
+
+    #design-2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #design-3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
 }
