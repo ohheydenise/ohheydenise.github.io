@@ -47,6 +47,13 @@ main {
     padding-top: 20px;
 }
 
+#fam-search {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 a {
     color: #800000;
 }
@@ -69,6 +76,9 @@ footer {
     grid-template-columns: repeat(1fr, 3);
     text-align: center;
     grid-gap: 10px;
+}
+
+#design-grid h3 {
     text-decoration: underline;
 }
 
@@ -76,6 +86,7 @@ footer {
     grid-column: 1;
     border: 2px solid #800000;
     border-radius: 10px;
+    text-align: center;
 }
 
 #design-2 {
