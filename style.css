@@ -111,6 +111,20 @@ Weather Site
     justify-content: space-evenly;
 }
 
+.weather-nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.weather-nav a:hover {
+    background-color: #800000;
+    border-radius: 10px;
+}
+
+.weather-nav a:active {
+    background-color: #559AFF;
+}
+
 /*
 Media Queries
 */
