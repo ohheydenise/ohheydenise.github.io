@@ -5,7 +5,7 @@
 body {
     max-width: 960px;
     margin: 0 auto;
-    background-color: #78AFFF;
+    background-color: rgb(248, 217, 160);
 }
 
 #home-grid {
@@ -101,6 +101,19 @@ footer {
     border-radius: 10px;
 }
 
+/*
+Weather Site
+*/
+
+.weather-nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+/*
+Media Queries
+*/
 @media screen and (max-width: 900px) {
     #design-grid {
         grid-template-columns: repreat(1fr, 2);
