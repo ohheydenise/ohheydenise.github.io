@@ -130,6 +130,10 @@ Weather Site
     background-color: #559AFF;
 }
 
+#weather-logo {
+    width: 200px;
+}
+
 /*
 Media Queries
 */
