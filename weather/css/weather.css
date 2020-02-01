@@ -1,0 +1,115 @@
+/* Box Model */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* General Styles */
+body {
+    font-size: 18px;
+}
+
+#wrapper {
+    padding: 0vw;
+}
+
+/* Mobile First Styles */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #acfff8;
+}
+
+.headings {
+    padding: 2vw;
+    line-height: .5em;
+    text-align: center;
+}
+
+#weather-logo {
+    width: 15vw;
+}
+
+#prestonTitle {
+    font-size: 1.8em;
+}
+
+#tagline {
+    font-size: 1em;
+}
+
+nav {
+    background-color: #acd3ff;
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0.8em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#preston-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area-heading {
+    line-height: 0.5em;
+    padding: 0 5vw;
+}
+
+.area-heading h1 {
+    font-size: 1.8em;
+}
+
+.area-heading h2 {
+    font-size: 1em;
+}
+
+.info {
+    border: 2px solid;
+    width: 60vw;
+    text-align: center;
+    border-radius: 8px;
+    margin: 1vw;
+}
+
+#currCon {
+    background-color: red;
+}
+
+#temp {
+    background-color: green;
+}
+
+#precip {
+    background-color: blue;
+}
+
+#futureCond {
+    background-color: yellow;
+}
+
+/* Larger Screen Styles */
+@media sreen and (min-width: 40em) {
+    
+}
