@@ -17,11 +17,19 @@
             </section>
         </header>
         <nav id="prestonNav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-            </ul>
+            <div id="menu-bar">
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <ul id="nav" class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                </ul>
+            </div>
+            <div id="menu-bg" class="menu-bg"></div>
         </nav>
         <main>
             <section class="area-heading">
@@ -45,8 +53,11 @@
             </div>
         </main>
         <footer>
-
+            <p>&copy; 2020 Zac Williams</p>
         </footer>
     </div>
+
+
+    <script src="/weather/js/hamMenu.js"></script>
 </body>
 </html>
