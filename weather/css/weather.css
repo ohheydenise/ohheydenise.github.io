@@ -160,6 +160,204 @@ a {
     text-decoration: none;
 }
 
+/* For Components */
+.component{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    background-color: darkgray;
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+        
+.inner {
+    width: 75%;
+    height: 75%;
+    background-color: rgb(200, 200, 200);
+    border-radius: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner h1 {
+    font-size: 3em;
+}
+  
+.slider {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 89;
+    height: 13%;
+    width: 13%;
+}
+  
+.box {
+    background-color: rgb(200, 200, 200);
+    display: block;
+    position: absolute;
+    width: 43%;
+    height: 20%;
+    border-radius: 40%;
+    transform: rotate(330deg) translateY(-210%) rotate(-0deg);
+}
+  
+.edge1 {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background-color: darkgrey;
+    height: 12.5%;
+    width: 12.5%;
+    transform: rotate(-3deg) translateY(-350%);
+}
+  
+.edge2 {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background-color: darkgrey;
+    height: 12.5%;
+    width: 12.5%;
+    transform: rotate(303deg) translateY(-349%);
+}
+  
+.outer {
+    position: absolute;
+    display: flex;
+    margin: auto;
+    height: 15%;
+    width: 15%;
+    font-size: 1.2em;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+  
+.ib {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    height: 13%;
+    width: 13%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    position: absolute;
+    margin: auto;
+    display: block;
+    font-size: 400%;
+}
+  
+.i0 {
+    transform: translateY(-337%);
+}
+  
+.i1 {
+    transform: rotate(30deg) translateY(-337%) rotate(-30deg);
+}
+  
+.i2 {
+    transform: rotate(60deg) translateY(-337%) rotate(-60deg);
+}
+  
+.i3 {
+    transform: rotate(90deg) translateY(-337%) rotate(-90deg);
+}
+  
+.i4 {
+    transform: rotate(120deg) translateY(-337%) rotate(-120deg);
+}
+  
+.i5 {
+    transform: rotate(150deg) translateY(-337%) rotate(-150deg);
+}
+  
+.i6 {
+    transform: rotate(180deg) translateY(-337%) rotate(-180deg);
+}
+  
+.i7 {
+    transform: rotate(210deg) translateY(-337%) rotate(-210deg);
+}
+  
+.i8 {
+    transform: rotate(240deg) translateY(-337%) rotate(-240deg);
+}
+  
+.i9 {
+    transform: rotate(270deg) translateY(-337%) rotate(-270deg);
+}
+  
+.i10 {
+    transform: rotate(300deg) translateY(-337%) rotate(-300deg);
+}
+  
+.o0 {
+    transform: rotate(0deg) translateY(-395%) rotate(-0deg);
+}
+  
+.o1 {
+    transform: rotate(30deg) translateY(-395%) rotate(-30deg);
+}
+  
+.o2 {
+    transform: rotate(60deg) translateY(-395%) rotate(-60deg);
+}
+  
+.o3 {
+    transform: rotate(90deg) translateY(-395%) rotate(-90deg);
+}
+  
+.o4 {
+    transform: rotate(120deg) translateY(-395%) rotate(-120deg);
+}
+  
+.o5 {
+    transform: rotate(150deg) translateY(-395%) rotate(-150deg);
+}
+  
+.o6 {
+    transform: rotate(180deg) translateY(-395%) rotate(-180deg);
+}
+  
+.o7 {
+    transform: rotate(210deg) translateY(-395%) rotate(-210deg);
+}
+  
+.o8 {
+    transform: rotate(240deg) translateY(-395%) rotate(-240deg);
+}
+  
+.o9 {
+    transform: rotate(270deg) translateY(-395%) rotate(-270deg);
+}
+  
+.o10 {
+    transform: rotate(300deg) translateY(-395%) rotate(-300deg);
+}
+
+.small-percent {
+    font-size: .5em;
+    margin-left: -.5em;
+}
+
+.moon {
+    position: absolute;
+    transform: translateY(-.2em);
+}
+/* End Components */
+
 #preston-area {
     display: flex;
     flex-direction: column;
@@ -167,6 +365,7 @@ a {
 }
 
 .area-heading {
+    background-color: white;
     line-height: 0.5em;
     padding: 0 5vw;
 }
@@ -188,27 +387,42 @@ a {
 }
 
 #currCon {
-    background-color: red;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#day-hi {
+    color: red;
+}
+
+#day-lo {
+    color: blue;
 }
 
 #temp {
-    background-color: green;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
 }
 
 #precip {
-    background-color: blue;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
 }
 
 #futureCond {
-    background-color: yellow;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
 }
 
 footer {
     background-color: #acd3ff;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /* Larger Screen Styles */
-@media sreen and (min-width: 40em) {
-    
-}
+/* 768px */
