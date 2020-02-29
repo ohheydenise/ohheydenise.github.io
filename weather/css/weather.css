@@ -51,7 +51,6 @@ nav {
     width: 100vw;
     bottom: 0;
     padding: 15px 10px;
-    text-align: center;
 }
 
 /* Hamburger Menu */
@@ -121,7 +120,7 @@ nav {
 
 .change-bg {
     width: 100%;
-    height: 80px;
+    height: 20px;
     transform: translate(-60%, -30%);
 }
 
