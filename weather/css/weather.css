@@ -96,7 +96,7 @@ nav {
 .nav {
     padding: 0;
     margin: 0;
-    transition: 0.1s ease;
+    transition: 0.3s ease;
     display: none;
 }
 
@@ -113,7 +113,7 @@ nav {
     margin: 0;
     /* background: radial-gradient(circle, #81dbff, #4586ff); */
     border-radius: 50%;
-    transition: 0.1s ease;
+    transition: 0.3s ease;
 }
 
 #menu-bar {
