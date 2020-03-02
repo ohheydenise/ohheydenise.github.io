@@ -68,7 +68,8 @@ nav {
     background-color: #008cff;
     display: block;
     border-radius: 5px;
-    transition: 0.5s ease;
+    transition: 0.5s;
+    transition-timing-function: ease;
 }
 
 #bar1 {
@@ -96,7 +97,8 @@ nav {
 .nav {
     padding: 0;
     margin: 0;
-    transition: 0.3s ease;
+    transition: 0.3s;
+    transition-timing-function: ease;
     display: none;
 }
 
@@ -113,7 +115,8 @@ nav {
     margin: 0;
     /* background: radial-gradient(circle, #81dbff, #4586ff); */
     border-radius: 50%;
-    transition: 0.3s ease;
+    transition: 0.3s;
+    transition-timing-function: ease;
 }
 
 #menu-bar {
@@ -180,7 +183,7 @@ a {
 .inner {
     width: 75%;
     height: 75%;
-    background-color: rgb(200, 200, 200);
+    background-color: #eee;
     border-radius: 90%;
     position: absolute;
     display: flex;
@@ -203,7 +206,7 @@ a {
 }
   
 .box {
-    background-color: rgb(200, 200, 200);
+    background-color: #eee;
     display: block;
     position: absolute;
     width: 43%;
@@ -420,19 +423,19 @@ a {
 }
 
 #temp {
-    background-color: rgb(200, 200, 200);
+    background-color: #eee;
     display: flex;
     justify-content: center;
 }
 
 #precip {
-    background-color: rgb(200, 200, 200);
+    background-color: #eee;
     display: flex;
     justify-content: center;
 }
 
 #futureCond {
-    background-color: rgb(200, 200, 200);
+    background-color: #eee;
     display: flex;
     justify-content: center;
 }

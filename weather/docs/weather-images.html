@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="/weather/css/weather-images.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Progressive Loading of Images</h1>
+    </header>
+    <main>
+        <picture class="clear">
+            <source media="(min-width: 768px)" srcset="/resource/images/clear-big.jpg">
+            <img src="/resource/images/clear-small.jpg" alt="clear">
+        </picture>
+        <picture class="clouds">
+            <source media="(min-width: 768px)" srcset="/resource/images/clouds-big.jpg">
+            <img src="/resource/images/clouds-small.jpg" alt="clouds">
+        </picture>
+        <picture class="fog">
+            <source media="(min-width: 768px)" srcset="/resource/images/fog-big.jpg">
+            <img src="/resource/images/fog-small.jpg" alt="fog">
+        </picture>
+        <picture class="rain">
+            <source media="(min-width: 768px)" srcset="/resource/images/rain-big.jpg">
+            <img src="/resource/images/rain-small.jpg" alt="rain">
+        </picture>
+        <picture class="snow">
+            <source media="(min-width: 768px)" srcset="/resource/images/snow-big.jpg">
+            <img src="/resource/images/snow-small.jpg"alt="snow">
+        </picture>
+    </main>
 </body>
 </html>
