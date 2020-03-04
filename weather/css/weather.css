@@ -450,3 +450,38 @@ footer {
 
 /* Larger Screen Styles */
 /* 768px */
+@media screen and (min-width: 768px) {
+    header {
+        border-radius: 0;
+    }
+
+    nav {
+        background-color: #acd3ff;
+        z-index: 100;
+        position: relative;
+        width: 100vw;
+        padding: 15px 10px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    #currCon {
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .three {
+        width: 30%;
+    }
+
+    #big-three {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    footer {
+        position: absolute;
+        margin-bottom: 0;
+    }
+}
