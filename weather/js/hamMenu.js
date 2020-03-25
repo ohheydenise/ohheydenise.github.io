@@ -1,3 +1,9 @@
+/* *********************************
+ * Functiona copied over to 
+ * functions.js. Use that file
+ * instead.
+********************************* */
+
 function onClickMenu() {
     document.getElementById('menu').classList.toggle('change');
     document.getElementById('nav').classList.toggle('change');

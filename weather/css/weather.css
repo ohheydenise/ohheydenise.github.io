@@ -46,6 +46,29 @@ header {
     font-size: 1em;
 }
 
+/* Background Images for Summary */
+.clear {
+    background-image: url('/resource/images/clear-small.jpg');
+}
+
+.rain {
+    background-image: url('/resource/images/rain-small.jpg');
+}
+
+.snow {
+    background-image: url('/resource/images/snow-small.jpg');
+}
+
+.clouds {
+    background-image: url('/resource/images/clouds-small.jpg');
+}
+
+.fog {
+    background-image: url('/resource/images/fog-small.jpg');
+}
+/* End Background Summary Images */
+
+
 nav {
     background-color: #acd3ff;
     z-index: 100;
@@ -195,14 +218,12 @@ a {
     font-size: 2.5em;
 }
   
-.slider {
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    background-color: black;
-    z-index: 89;
+.ball {
     height: 13%;
     width: 13%;
+    border-radius: 100%;
+    background-color: blue;
+    color: transparent;
 }
   
 .box {
@@ -368,6 +389,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-size: cover;
 }
 
 .area-heading {
@@ -455,6 +477,28 @@ footer {
         border-radius: 0;
     }
 
+    /* Background Images for Summary */
+    .clear {
+        background-image: url('/resource/images/clear-big.jpg');
+    }
+
+    .rain {
+        background-image: url('/resource/images/rain-big.jpg');
+    }
+
+    .snow {
+        background-image: url('/resource/images/snow-big.jpg');
+    }
+
+    .clouds {
+        background-image: url('/resource/images/clouds-big.jpg');
+    }
+
+    .fog {
+        background-image: url('/resource/images/fog-big.jpg');
+    }
+    /* End Background Summary Images */
+
     nav {
         background-color: #acd3ff;
         z-index: 100;
@@ -471,6 +515,10 @@ footer {
 
     .three {
         width: 30%;
+    }
+
+    #preston-area {
+        min-height: 500px;
     }
 
     #big-three {

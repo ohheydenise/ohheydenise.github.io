@@ -18,7 +18,7 @@
         </header>
         <nav>
             <div id="menu-bar">
-                <div id="menu" onclick="onClickMenu()">
+                <div id="menu">
                     <div id="bar1" class="bar"></div>
                     <div id="bar2" class="bar"></div>
                     <div id="bar3" class="bar"></div>
@@ -26,7 +26,7 @@
                 <ul id="nav" class="nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="soda-springs.html">Soda Springs</a></li>
                 </ul>
             </div>
             <div id="menu-bg" class="menu-bg"></div>
@@ -40,9 +40,10 @@
             <div id="preston-area">
                 <section id="currCon" class="info">
                     <h1 id="curTemp" class="conds">28&deg;F</h1>
-                    <h2 id="hi" class="conds">29&deg;</h2>
-                    <h2 id="lo" class="conds">8&deg;</h2>
+                    <h2 id="hi" class="conds">High: 29&deg;</h2>
+                    <h2 id="lo" class="conds">Low: 8&deg;</h2>
                     <h3 id="wind" class="conds">4.8mph</h3>
+                    <h3 class="conds">Feels like: <span id="real-feel"></span>&deg;F</h3>
                 </section>
                 <div id="big-three">
                     <section id="temp" class="info three">
@@ -61,11 +62,10 @@
                             <div class="inner">
                                 <h1>&deg;F</h1>
                             </div>
-                            <div class="slider i0"></div>
                             <div class="box"></div>
                             <div class="edge1"></div>
                             <div class="edge2"></div>
-                            <div class="i0 ib"><p>0</p></div>
+                            <div class="i0 ib ball"><p>12</p></div>
                             <div class="i1 ib"><p>1</p></div>
                             <div class="i2 ib"><p>2</p></div>
                             <div class="i3 ib"><p>3</p></div>
@@ -95,11 +95,10 @@
                             <div class="inner">
                                 <h1>&#9730;%</h1>
                             </div>
-                            <div class="slider i0"></div>
                             <div class="box"></div>
                             <div class="edge1"></div>
                             <div class="edge2"></div>
-                            <div class="i0 ib"><p>0</p></div>
+                            <div class="i0 ib ball"><p>12</p></div>
                             <div class="i1 ib"><p>1</p></div>
                             <div class="i2 ib"><p>2</p></div>
                             <div class="i3 ib"><p>3</p></div>
@@ -127,11 +126,10 @@
                             <div class="o9 outer"><p>&#9728;</p></div>
                             <div class="o10 outer"><p>&#9728;</p></div>
                             <div class="inner"></div>
-                            <div class="slider i0"></div>
                             <div class="box"></div>
                             <div class="edge1"></div>
                             <div class="edge2"></div>
-                            <div class="i0 ib"><p>0</p></div>
+                            <div class="i0 ib ball"><p>12</p></div>
                             <div class="i1 ib"><p>1</p></div>
                             <div class="i2 ib"><p>2</p></div>
                             <div class="i3 ib"><p>3</p></div>
@@ -150,11 +148,11 @@
         </main>
         <footer>
             <p>&copy; 2020 Zac Williams | BYU-Idaho</p>
-            <p>Last modified: <span id='currentdate'></span></p>
+            <p>Last modified: <span id='modDate'></span></p>
         </footer>
     </div>
 
 
-    <script src="/weather/js/hamMenu.js"></script>
+    <script src="/weather/js/functions.js"></script>
 </body>
 </html>
