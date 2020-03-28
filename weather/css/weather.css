@@ -1,6 +1,7 @@
 /* Box Model */
 html {
     box-sizing: border-box;
+    overflow: scroll;
 }
 
 *, *::before, *::after {
@@ -10,12 +11,12 @@ html {
 /* General Styles */
 body {
     font-size: 18px;
-    margin: 0;
+    margin: auto 0;
 }
 
 #wrapper {
     padding: 0vw;
-    margin: 0vw;
+    /* margin: 0vw; */
 }
 
 /* Mobile First Styles */
@@ -589,10 +590,6 @@ footer {
 
     .three {
         width: 30%;
-    }
-
-    #preston-area {
-        min-height: 500px;
     }
 
     #big-three {
