@@ -10,7 +10,7 @@ var statusContainer = $('#status');
 var contentContainer = $('#main-content');
 
 /* **********************************
- * Weather Site JavaScript Functions
+ * Soda Springs Site JavaScript Functions
  ********************************* */
 
 // Let the DOM finish loading
@@ -110,7 +110,7 @@ function changeSummaryImage(condition) {
  * Fetch Weather Data
  ********************************* */
 function fetchWeatherData(weatherURL) {
-    let cityName = 'Preston'; // The data we want from the weather.json file
+    let cityName = 'Soda Springs'; // The data we want from the weather.json file
     fetch(weatherURL)
     .then(function(response) {
         if(response.ok) {

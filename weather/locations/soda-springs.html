@@ -1,11 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clouds on Clouds | Soda Springs</title>
-    </head>
-    <body>
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="page-title"> | Clouds on Clouds</title>
+    <link rel="stylesheet" href="../css/weather.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img id="weather-logo" src="/weather/images/IVSG8447.PNG" alt="Clouds on Clouds Logo">
+            <section class="headings">
+                <h1 id="prestonTitle">Clouds on Clouds</h1>
+                <h2 id="tagline">For All Your Weather Needs</h2>
+            </section>
+        </header>
+        <nav id="page-nav">
+            <div id="menu-bar">
+                <div id="menu">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <ul id="nav" class="nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="soda-springs.html">Soda Springs</a></li>
+                </ul>
+            </div>
+            <div id="menu-bg" class="menu-bg"></div>
+        </nav>
+
+        <section id="status">Please be patient while we get your weather information.</section>
+
+        <main id="main-content" class="hide">
+            <section class="area-heading">
+                <h1 id="contentHeading"></h1>
+                <h2>GPS: <span id="latLon"></span></h2>
+            </section>
+            <hr>
+            <div id="preston-area">
+                <section id="currCon" class="info">
+                    <h1 class="conds"><span id='curTemp'></span>&deg;F</h1>
+                    <h2 id='tempHi' class="conds">High: <span id='hi'></span>&deg;</h2>
+                    <h2 id='tempLo' class="conds">Low: <span id='lo'></span>&deg;</h2>
+                    <h3 id='windGust' class="conds"></h3>
+                    <h3 id='windSpeed' class="conds"></h3>
+                    <h3 id='feels' class="conds">Feels like: <span id="real-feel"></span>&deg;F</h3>
+                </section>
+                <div id="big-three">
+                    <section id="temps" class="info three">
+                        <div class="component">
+                            <div class="o12 outer"></div>
+                            <div class="o1 outer"></div>
+                            <div class="o2 outer"></div>
+                            <div class="o3 outer"></div>
+                            <div class="o4 outer"></div>
+                            <div class="o5 outer"></div>
+                            <div class="o6 outer"></div>
+                            <div class="o7 outer"></div>
+                            <div class="o8 outer"></div>
+                            <div class="o9 outer"></div>
+                            <div class="o10 outer"></div>
+                            <div class="o11 outer"></div>
+                            <div class="inner">
+                                <h1>&deg;F</h1>
+                            </div>
+                            <!--<div class="box"></div>
+                            <div class="edge1"></div>
+                            <div class="edge2"></div>-->
+                            <div class="i12 ib ball"><p>12</p></div>
+                            <div class="i1 ib"><p>1</p></div>
+                            <div class="i2 ib"><p>2</p></div>
+                            <div class="i3 ib"><p>3</p></div>
+                            <div class="i4 ib"><p>4</p></div>
+                            <div class="i5 ib"><p>5</p></div>
+                            <div class="i6 ib"><p>6</p></div>
+                            <div class="i7 ib"><p>7</p></div>
+                            <div class="i8 ib"><p>8</p></div>
+                            <div class="i9 ib"><p>9</p></div>
+                            <div class="i10 ib"><p>10</p></div>
+                            <div class="i11 ib"><p>11</p></div>
+                            <div class="center"></div>
+                        </div>
+                    </section>
+                    <section id="wnd" class="info three">
+                        <div class="component">
+                            <div class="o12 outer"></div>
+                            <div class="o1 outer"></div>
+                            <div class="o2 outer"></div>
+                            <div class="o3 outer"></div>
+                            <div class="o4 outer"></div>
+                            <div class="o5 outer"></div>
+                            <div class="o6 outer"></div>
+                            <div class="o7 outer"></div>
+                            <div class="o8 outer"></div>
+                            <div class="o9 outer"></div>
+                            <div class="o10 outer"></div>
+                            <div class="o11 outer"></div>
+                            <div class="inner">
+                                <h1>mph</h1>
+                            </div>
+                            <!-- <div class="box"></div>
+                            <div class="edge1"></div>
+                            <div class="edge2"></div> -->
+                            <div class="i12 ib ball"><p>12</p></div>
+                            <div class="i1 ib"><p>1</p></div>
+                            <div class="i2 ib"><p>2</p></div>
+                            <div class="i3 ib"><p>3</p></div>
+                            <div class="i4 ib"><p>4</p></div>
+                            <div class="i5 ib"><p>5</p></div>
+                            <div class="i6 ib"><p>6</p></div>
+                            <div class="i7 ib"><p>7</p></div>
+                            <div class="i8 ib"><p>8</p></div>
+                            <div class="i9 ib"><p>9</p></div>
+                            <div class="i10 ib"><p>10</p></div>
+                            <div class="i11 ib"><p>11</p></div>
+                            <div class="center"></div>
+                        </div>
+                    </section>
+                    <section id="futureCond" class="info three">
+                        <div class="component">
+                            <div class="o12 outer"></div>
+                            <div class="o1 outer"></div>
+                            <div class="o2 outer"></div>
+                            <div class="o3 outer"></div>
+                            <div class="o4 outer"></div>
+                            <div class="o5 outer"></div>
+                            <div class="o6 outer"></div>
+                            <div class="o7 outer"></div>
+                            <div class="o8 outer"></div>
+                            <div class="o9 outer"></div>
+                            <div class="o10 outer"></div>
+                            <div class="o11 outer"></div>
+                            <div class="inner">
+                                <h1></h1>
+                            </div>
+                            <!-- <div class="box"></div>
+                            <div class="edge1"></div>
+                            <div class="edge2"></div> -->
+                            <div class="i12 ib ball"><p>12</p></div>
+                            <div class="i1 ib"><p>1</p></div>
+                            <div class="i2 ib"><p>2</p></div>
+                            <div class="i3 ib"><p>3</p></div>
+                            <div class="i4 ib"><p>4</p></div>
+                            <div class="i5 ib"><p>5</p></div>
+                            <div class="i6 ib"><p>6</p></div>
+                            <div class="i7 ib"><p>7</p></div>
+                            <div class="i8 ib"><p>8</p></div>
+                            <div class="i9 ib"><p>9</p></div>
+                            <div class="i10 ib"><p>10</p></div>
+                            <div class="i11 ib"><p>11</p></div>
+                            <div class="center"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2020 Zac Williams | BYU-Idaho</p>
+            <p>Last modified: <span id='modDate'></span></p>
+        </footer>
+    </div>
+
+
+    <script src="/weather/js/soda.js"></script>
+</body>
 </html>

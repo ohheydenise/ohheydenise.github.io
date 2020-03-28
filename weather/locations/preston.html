@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clouds on Clouds | Preston</title>
+    <title id="page-title"> | Clouds on Clouds</title>
     <link rel="stylesheet" href="../css/weather.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <h2 id="tagline">For All Your Weather Needs</h2>
             </section>
         </header>
-        <nav>
+        <nav id="page-nav">
             <div id="menu-bar">
                 <div id="menu">
                     <div id="bar1" class="bar"></div>
@@ -24,48 +24,53 @@
                     <div id="bar3" class="bar"></div>
                 </div>
                 <ul id="nav" class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Preston</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
                     <li><a href="soda-springs.html">Soda Springs</a></li>
                 </ul>
             </div>
             <div id="menu-bg" class="menu-bg"></div>
         </nav>
-        <main>
+
+        <section id="status">Please be patient while we get your weather information.</section>
+
+        <main id="main-content" class="hide">
             <section class="area-heading">
-                <h1>Preston, ID</h1>
-                <h2>GPS: 42.543, 111.5231</h2>
+                <h1 id="contentHeading"></h1>
+                <h2>GPS: <span id="latLon"></span></h2>
             </section>
             <hr>
             <div id="preston-area">
                 <section id="currCon" class="info">
-                    <h1 id="curTemp" class="conds">28&deg;F</h1>
-                    <h2 id="hi" class="conds">High: 29&deg;</h2>
-                    <h2 id="lo" class="conds">Low: 8&deg;</h2>
-                    <h3 id="wind" class="conds">4.8mph</h3>
-                    <h3 class="conds">Feels like: <span id="real-feel"></span>&deg;F</h3>
+                    <h1 class="conds"><span id='curTemp'></span>&deg;F</h1>
+                    <h2 id='tempHi' class="conds">High: <span id='hi'></span>&deg;</h2>
+                    <h2 id='tempLo' class="conds">Low: <span id='lo'></span>&deg;</h2>
+                    <h3 id='windGust' class="conds"></h3>
+                    <h3 id='windSpeed' class="conds"></h3>
+                    <h3 id='feels' class="conds">Feels like: <span id="real-feel"></span>&deg;F</h3>
                 </section>
                 <div id="big-three">
-                    <section id="temp" class="info three">
+                    <section id="temps" class="info three">
                         <div class="component">
-                            <div class="o0 outer"><p>28</p></div>
-                            <div class="o1 outer"><p>28</p></div>
-                            <div class="o2 outer"><p>28</p></div>
-                            <div class="o3 outer"><p>27</p></div>
-                            <div class="o4 outer"><p>24</p></div>
-                            <div class="o5 outer"><p>24</p></div>
-                            <div class="o6 outer"><p>24</p></div>
-                            <div class="o7 outer"><p>23</p></div>
-                            <div class="o8 outer"><p>23</p></div>
-                            <div class="o9 outer"><p>22</p></div>
-                            <div class="o10 outer"><p>22</p></div>
+                            <div class="o12 outer"></div>
+                            <div class="o1 outer"></div>
+                            <div class="o2 outer"></div>
+                            <div class="o3 outer"></div>
+                            <div class="o4 outer"></div>
+                            <div class="o5 outer"></div>
+                            <div class="o6 outer"></div>
+                            <div class="o7 outer"></div>
+                            <div class="o8 outer"></div>
+                            <div class="o9 outer"></div>
+                            <div class="o10 outer"></div>
+                            <div class="o11 outer"></div>
                             <div class="inner">
                                 <h1>&deg;F</h1>
                             </div>
-                            <div class="box"></div>
+                            <!--<div class="box"></div>
                             <div class="edge1"></div>
-                            <div class="edge2"></div>
-                            <div class="i0 ib ball"><p>12</p></div>
+                            <div class="edge2"></div>-->
+                            <div class="i12 ib ball"><p>12</p></div>
                             <div class="i1 ib"><p>1</p></div>
                             <div class="i2 ib"><p>2</p></div>
                             <div class="i3 ib"><p>3</p></div>
@@ -76,29 +81,31 @@
                             <div class="i8 ib"><p>8</p></div>
                             <div class="i9 ib"><p>9</p></div>
                             <div class="i10 ib"><p>10</p></div>
+                            <div class="i11 ib"><p>11</p></div>
                             <div class="center"></div>
                         </div>
                     </section>
-                    <section id="precip" class="info three">
+                    <section id="wnd" class="info three">
                         <div class="component">
-                            <div class="o0 outer"><p>30</p></div>
-                            <div class="o1 outer"><p>20</p></div>
-                            <div class="o2 outer"><p>20</p></div>
-                            <div class="o3 outer"><p>20</p></div>
-                            <div class="o4 outer"><p>70</p></div>
-                            <div class="o5 outer"><p>70</p></div>
-                            <div class="o6 outer"><p>60</p></div>
-                            <div class="o7 outer"><p>10</p></div>
-                            <div class="o8 outer"><p>20</p></div>
-                            <div class="o9 outer"><p>20</p></div>
-                            <div class="o10 outer"><p>10</p></div>
+                            <div class="o12 outer"></div>
+                            <div class="o1 outer"></div>
+                            <div class="o2 outer"></div>
+                            <div class="o3 outer"></div>
+                            <div class="o4 outer"></div>
+                            <div class="o5 outer"></div>
+                            <div class="o6 outer"></div>
+                            <div class="o7 outer"></div>
+                            <div class="o8 outer"></div>
+                            <div class="o9 outer"></div>
+                            <div class="o10 outer"></div>
+                            <div class="o11 outer"></div>
                             <div class="inner">
-                                <h1>&#9730;%</h1>
+                                <h1>mph</h1>
                             </div>
-                            <div class="box"></div>
+                            <!-- <div class="box"></div>
                             <div class="edge1"></div>
-                            <div class="edge2"></div>
-                            <div class="i0 ib ball"><p>12</p></div>
+                            <div class="edge2"></div> -->
+                            <div class="i12 ib ball"><p>12</p></div>
                             <div class="i1 ib"><p>1</p></div>
                             <div class="i2 ib"><p>2</p></div>
                             <div class="i3 ib"><p>3</p></div>
@@ -109,27 +116,31 @@
                             <div class="i8 ib"><p>8</p></div>
                             <div class="i9 ib"><p>9</p></div>
                             <div class="i10 ib"><p>10</p></div>
+                            <div class="i11 ib"><p>11</p></div>
                             <div class="center"></div>
                         </div>
                     </section>
                     <section id="futureCond" class="info three">
                         <div class="component">
-                            <div class="o0 outer"><p>&#9729;</p></div>
-                            <div class="o1 outer"><p>&#9729;</p></div>
-                            <div class="o2 outer"><p>&#9728;</p></div>
-                            <div class="o3 outer"><p>&#9729;</p></div>
-                            <div class="o4 outer"><p>&#10052;</p></div>
-                            <div class="o5 outer"><p>&#10052;</p></div>
-                            <div class="o6 outer"><p>&#10052;</p></div>
-                            <div class="o7 outer"><p>&#9729;</p></div>
-                            <div class="o8 outer"><p>&#9729;</p></div>
-                            <div class="o9 outer"><p>&#9728;</p></div>
-                            <div class="o10 outer"><p>&#9728;</p></div>
-                            <div class="inner"></div>
-                            <div class="box"></div>
+                            <div class="o12 outer"></div>
+                            <div class="o1 outer"></div>
+                            <div class="o2 outer"></div>
+                            <div class="o3 outer"></div>
+                            <div class="o4 outer"></div>
+                            <div class="o5 outer"></div>
+                            <div class="o6 outer"></div>
+                            <div class="o7 outer"></div>
+                            <div class="o8 outer"></div>
+                            <div class="o9 outer"></div>
+                            <div class="o10 outer"></div>
+                            <div class="o11 outer"></div>
+                            <div class="inner">
+                                <h1></h1>
+                            </div>
+                            <!-- <div class="box"></div>
                             <div class="edge1"></div>
-                            <div class="edge2"></div>
-                            <div class="i0 ib ball"><p>12</p></div>
+                            <div class="edge2"></div> -->
+                            <div class="i12 ib ball"><p>12</p></div>
                             <div class="i1 ib"><p>1</p></div>
                             <div class="i2 ib"><p>2</p></div>
                             <div class="i3 ib"><p>3</p></div>
@@ -140,6 +151,7 @@
                             <div class="i8 ib"><p>8</p></div>
                             <div class="i9 ib"><p>9</p></div>
                             <div class="i10 ib"><p>10</p></div>
+                            <div class="i11 ib"><p>11</p></div>
                             <div class="center"></div>
                         </div>
                     </section>

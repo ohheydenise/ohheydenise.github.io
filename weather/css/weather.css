@@ -24,7 +24,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0 20px 20px;
     background-color: #e2efff;
 }
 
@@ -67,7 +66,6 @@ header {
     background-image: url('/resource/images/fog-small.jpg');
 }
 /* End Background Summary Images */
-
 
 nav {
     background-color: #acd3ff;
@@ -286,7 +284,7 @@ a {
     font-size: 400%;
 }
   
-.i0 {
+.i12 {
     transform: translateY(-337%);
 }
   
@@ -329,8 +327,12 @@ a {
 .i10 {
     transform: rotate(300deg) translateY(-337%) rotate(-300deg);
 }
+
+.i11 {
+    transform: rotate(330deg) translateY(-337%) rotate(-330deg);
+}
   
-.o0 {
+.o12 {
     transform: rotate(0deg) translateY(-395%) rotate(-0deg);
 }
   
@@ -372,6 +374,10 @@ a {
   
 .o10 {
     transform: rotate(300deg) translateY(-395%) rotate(-300deg);
+}
+
+.o11 {
+    transform: rotate(330deg) translateY(-395%) rotate(-330deg);
 }
 
 .small-percent {
@@ -421,36 +427,54 @@ a {
 #currCon {
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
 }
 
 #curTemp {
     font-size: 2em;
-    grid-column: 2;
 }
 
 #hi {
     color: red;
-    grid-column: 1;
 }
 
 #lo {
     color: blue;
-    grid-column: 3;
 }
 
-#wind {
+#tempHi {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#tempLo {
     grid-column: 2;
+    grid-row: 2;
 }
 
-#temp {
+#windGust {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#windSpeed {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#feels {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#temps {
     background-color: #eee;
     display: flex;
     justify-content: center;
 }
 
-#precip {
+#wnd {
     background-color: #eee;
     display: flex;
     justify-content: center;
@@ -462,12 +486,20 @@ a {
     justify-content: center;
 }
 
+#futureCond img {
+    max-width: 90%;
+    border-radius: 100%;
+}
+
 footer {
     background-color: #acd3ff;
     text-align: center;
     margin-bottom: 60px;
-    border-radius: 20px 20px 0 0;
     width: 100%;
+}
+
+.hide {
+    display: none;
 }
 
 /* Larger Screen Styles */
@@ -505,12 +537,54 @@ footer {
         position: relative;
         width: 100vw;
         padding: 15px 10px;
-        border-radius: 0 0 20px 20px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav li {
+        padding: 0;
+    }
+
+    .nav li a {
+        color: #000;
+        font-size: 1.5vw;
     }
 
     #currCon {
         width: 90%;
         max-width: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #feels {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #tempHi {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #tempLo {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #windSpeed {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #windGust {
+        grid-column: 3;
+        grid-row: 2;
     }
 
     .three {
